@@ -1,0 +1,22 @@
+const links = [
+    {label: "Week 1", url: "week1/index.html"}
+]
+
+
+var listy = document.createElement('ol')
+
+
+for (let i = 0; i < links.length; i++) {
+    let item = document.createElement('li');
+    let a = document.createElement('a');
+
+    var link = document.createTextNode(links[i].label);
+    a.appendChild(link);
+    a.href = links[i].label;
+    item.appendChild(a);
+
+    listy.appendChild(item);
+
+    
+}
+document.querySelector('div.olist').appendChild(listy);
