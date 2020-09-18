@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Week 1 Example</title>
+
+</head>
+<body>
+    <h1>WEEK 1 NOTES</h1>
+    SYLLABUS
+    <ul>
+        <li>This class will mostly be reading and absorbing information.</li>
+        <li>TO DO: Purchase activation code. (Done)</li>
+        <li>TO DO: Set up Github and Github Pages. (Done)</li>
+        <li>I am using VS Code for other classes. How do I keep the projects organized? Workspaces? No, too confusing. Just open the project folder when needed.</li>
+    </ul>
+    JAVASCRIPT
+    <ul>
+        <li>Issue with table of contents page: Failed to execute ‘append’Child’ on ‘Node’: parameter 1 is not of type ‘Node’. I guess you can’t simply append children to anything. Did some digging and found a solution. Use createTextNode for link instead of createElement. Why does this work? Is this the best solution?</li>
+    </ul>
+    READING
+    <ul>
+        <li>A lot of things in IT are simply convention that has been passed down for decades, even though it may seem impractical.</li>
+    </ul>
+    VIDEO
+    <ul>
+<li>Rewiring brains: desktop computer sales down. Everyone has their phone with them. Start small and scale up. Mobile is not a fad.</li>
+<li>Be there (have your product available), be useful (meet their needs), be quick.</li>
+<li>       How do they use it? 75% thumbs. 49% one hand. Easy to reach</li>
+<li>      Slow? Google: ½ second delay = 20% drop in traffic. Bing: 2 sec delay = 4% revenue drop. AOL: fastest 10% of users stay 50% longer.</li>
+<li>      SPEED TIPS: Reduce image size. SVG/Webfonts. Optimize and minify CSS and JS. GZIP files to eliminate unnecessary data.</li>
+<li>      Put nav bar and most commonly used menu items at bottom. Makes you think it’s faster.</li>
+<li>      Put menu with border to get most interactivity (+20%). No border (-22.2%). Menu with hamburger (+5.7%)</li>
+<li>     End users shape the market, not tech.</li>
+<li>     ADS: stop being intrusive. Make them not full size until clicked. Try hover with stationary. No popups and pop overs. Content first.</li>
+        
+    </ul>
+
+
+
+    <h2>Story Editor</h2>
+    Story Name: <input id="name_input"></input>
+    <section>
+        <button onclick="loadStory()">Find and Edit It</button>
+        <button onclick="saveStory()">Save It</button>
+        <button onclick="displayStory()">Display It</button>
+    </section>
+
+    <textarea id="story_editor" placeholder="Write a totally awesome story here."></textarea>
+    <section id="story_display"></section>
+    <script src="index.js"></script>
+
+ 
+
+</body>
+</html>

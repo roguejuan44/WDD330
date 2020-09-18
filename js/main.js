@@ -12,7 +12,7 @@ for (let i = 0; i < links.length; i++) {
 
     var link = document.createTextNode(links[i].label);
     a.appendChild(link);
-    a.href = links[i].label;
+    a.href = links[i].url;
     item.appendChild(a);
 
     listy.appendChild(item);

@@ -1,0 +1,12 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+textarea {
+    width:800px;
+    height:250px;
+    background-color: lightyellow;
+}
+#name_input {
+    width: 300px;
+}
