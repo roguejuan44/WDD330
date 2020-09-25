@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Week 2 Team</title>
+
+</head>
+<body>
+<main>
+    
+    <input type="number" id="textstuff"/>
+    <button type="button" onclick="calculator(run)">Click here</button>
+    <div id="display"></div>
+
+    <input type="number" id="pt2"/>
+    <button type="button" onclick="calculator(sum)">+</button>
+    <div id="display2"></div>
+
+    <input type="number" id="subtract"/>
+    <button type="button" onclick="calculator(subtract)">Subtract</button>
+    <div id="display3"></div>
+    
+    <div id="display4"></div>
+    <button type="button" onclick="calculator(add)">Add</button>
+
+</main>
+
+    <script>
+        function calculator(operation) {
+            operation();
+        }
+
+        function display(id, value) {
+            document.getElementById(id).innerHTML = value;
+        }
+
+        function run() {
+            let textBox = document.getElementById("textstuff").value;
+            display("display", textBox);
+        }
+        
+        function sum() {
+            let textBox2 = document.getElementById("pt2").value;
+            let y = 0;
+            for (let i = 0; i <= textBox2; i++) {
+                y += i;
+            }         
+            display("display2", y);
+        }
+
+        function subtract() {
+            let x = document.getElementById("subtract").value;
+            let y = x;
+            for (let i = x; i > 0; i--) {
+                y -= i;
+            }         
+            display("display3", y);
+        }
+        function add() {
+            let textBox = document.getElementById("textstuff").value;
+            let textBox2 = document.getElementById("pt2").value;
+            let z = Number(textBox) + Number(textBox2);
+            display("display4", z);
+        }
+        
+</script>
+    </body>
+</html>
