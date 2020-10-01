@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 3</title>
+
+</head>
+<body>
+    <h1>Week 3 Reading Notes</h1>
+    <h3>Questions</h3>
+    <ul>
+      <li>How important is it to support older browsers, such as Internet Explorer before version 10? Or IE at all?</li>
+    </ul>
+    <h3>Function Expression</h3>
+    <p>user.sayHi = function() {alert("Hello!");};</p>
+
+    <h3>Method Shorthand</h3>
+    <p>user = {sayHi() {alert("Hello");}};
+      </p>
+
+    <h3>Arrow Function</h3>
+    <p>let user = {</br>
+        firstName: "Ilya", <br>
+        sayHi() {<br>
+          let arrow = () => alert(this.firstName);<br>
+          arrow();}<br>};
+      </p>
+
+      <h3>Regular Expressions</h3>
+      <p>const pattern = /[a-zA-Z]+ing$/; <br>
+        pattern.test('joking');<br>
+        << true    
+    </p>
+  <h3>Object Literal</h3>
+  <p>const superman = {<br>
+    name: 'Superman',
+    'real name': 'Clark Kent',
+    height: 75,
+    weight: 235,
+    hero: true,
+    villain: false,
+    allies: ['Batman','Supergirl','Superboy'], <br>
+    fly() {
+        return 'Up, up and away!';
+    } <br>
+  };
+  </p>
+
+  <h3>DOM</h3>
+  <ul>
+    <li><em>document.body</em> returns the body element of a web page</li>
+    <li><em>document.images</em> returns a node list of all the images contained in the document.</li>
+    <li><em>document.links</em> returns a node list of all the <a> elements and <area> elements that have an href attribute.</li>
+    <li><em>document.anchors</em> returns a node list of all the <a> elements that have a name attribute.</li>
+    <li><em>document.forms</em> returns a node list of all the forms in the document. </li>
+  </ul>
+
+<h3>Other DOM Selectors to Remember</h3>
+<ul>
+  <li>document.getElementById();</li>
+  <li>document.getElementsByTagName(); -- returns a list</li>
+  <li>document.getElementsByClassName(); --returns a list</li>
+  <li>document.querySelector(); -- searches by what the CSS selector would be</li>
+  <li>document.querySelectorAll();</li>
+  <li>document.createElement();
+    <ul>
+      <li>	document.createTextNode();</li>
+      <li>		.appendChild();</li>
+      <li>		.removeChild();</li>
+      <li>		.replaceChild();</li>
+    </ul></li>
+  <li>.innerHTML; -- returns as raw html string</li>
+</ul>
+
+<h3>Events</h3>
+  <ul>
+    <li>Attach an event to a node (ie, document.body)</li>
+    <li>document.body.addEventListener("click", doSomething)</li>
+    <li>Keypress event fires when a character is produced on screen, so modifier keys only fire keydown and keyup.</li>
+  </ul>
+
+</body>
+</html>
