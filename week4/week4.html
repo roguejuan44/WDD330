@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 4</title>
+    <h1>Week 4 Notes</h1>
+    <p>A form allows the user to input information, which in the past, was immediately sent to a server and processed using PHP or Ruby. However, modern convention is to process the information on the front end with JS before sending it to the server.</p>
+
+    <h3>ACCESS FORMS</h3>
+    
+    <p>const form = document.forms[0];</p>
+    <p>const form = document.getElementsByTagname('form')[0];   </p>            
+    <p>const form = document.forms.nameYouAssignedTheFormInHTML;</p>
+    <p>const form = document.forms['nameYouAssignedTheFormInHTML'];</p>
+    
+    <h3>ACCESS FORM ELEMENTS</h3>
+    
+    <p>const [input,button] = form.elements;</p>
+    <p>const input = form.namedElement</p>
+    <p>const input = form['namedElement']</p>
+    
+    <h3>FORM PROPERTIES AND METHODS</h3>
+    
+    <p>form.submit()</p>
+    <p>form.action = "" set url to send the data to</p>
+    <p>form.reset() - no need to include a reset button. People will only use them on accident.</p>
+    
+    <h3>FORM CONTROLS</h3>
+    
+    <h4>Input</h4>
+    <ul>
+        <li>text input</li>
+        <li>password</li>
+        <li>checkbox</li>
+        <li>radio</li>
+        <li>hidden</li>
+        <li>file</li>
+        <li>number</li>
+</ul>
+    <h4>Select</h4>
+        <p>The select element creates a drop down list the user can select from. If you add the multiple attribute to the HTML, it will allow the user to select multiple items from this drop down list. The selected attribute sets the default selection. The list is built like so.</p>
+    
+    <label for='City'>Base of Operations:
+        <select name='city' id='city'>
+            <option value='' selected>Choose a City</option>
+            <option value='Metropolis'>Metropolis</option>
+            <option value='Gotham City'>Gotham City</option>
+            <option value='Keystone City'>Keystone City</option>
+            <option value='Coast City'>Coast City</option>
+            <option value='Star City'>Star City</option>
+        </select>
+    </label><br>
+        
+    <h4>Textarea</h4>
+        <p>Textarea is an element that allows the user to input much longer text strings than the normal input text element. This is great for maybe a contact us or a technical support page where you're sending an email or submitting a question. You can set the rows and cols in the HTML, or set the width and height in CSS.</p>
+    
+    <h3>BUTTON TYPES</h3>
+    <ul>
+        <li>Submit</li>
+        <li>Reset</li>
+        <li>Button</li>
+    </ul>
+    
+    <h3>OOP</h3>
+    
+    <p>JS seems to have the same principles of encapsulation, polymorphism and inheritance as other languages and they seem to be implemented the same way.</p>
+    
+    <p>A static method is called by class rather than by an object. QUESTION: What does that mean?</p>
+    <p>What is node.js?</p>
+    
+    <h3>JS Libraries</h3>
+    <ul>
+    <li>jQuery</li>
+    <li>Underscore</li>
+    <li>Lodash</li>
+    </ul>
+    
+    
+</head>
+<body>
+
+</body>
+</html>
