@@ -7,7 +7,7 @@ const links = [
 ]
 
 
-var listy = document.createElement('ol')
+var listy = document.createElement('ol');
 
 
 for (let i = 0; i < links.length; i++) {
