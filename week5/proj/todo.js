@@ -1,23 +1,21 @@
-const tasks = [];
+const tasks = ["eat food", "workout"];
 
-function populate() {
-    for (let i = 0; i < tasks.length; i++) {
-        var line = document.createElement('input');
-        line.setAttribute("type", "checkbox")
-        line.textContent = tasks[i];
-        console.log(line);
-        document.querySelector('div.todo').appendChild(line);
-    }
+let box = document.getElementById("task-list");
+for (let i = 0; i < tasks.length; i++) {
+    populate(tasks[i]);
 }
+
+function populate(x) {
+    let task = document.createElement('p');
+    task.innerHTML = x;
+    document.querySelector('div.task-list').appendChild(task);
+}
+
 
 function getTask() {
     var newTask = document.getElementById("inputbox").value;
-    console.log(newTask);
-    if (newTask != null) {
-        tasks.push(newTask);
-        populate();
-
-    }
+    tasks.push(newTask);
+    console.log(tasks);
+    populate(newTask);
 }
 
-populate()
