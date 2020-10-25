@@ -47,6 +47,7 @@ function populate(x) {
         //append item to screen
         document.querySelector('section.task-list').appendChild(task);
         }
+        updateCounter();
 }
 
 //Take input and create new task
