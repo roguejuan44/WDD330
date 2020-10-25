@@ -132,8 +132,8 @@ function trashTask(x){
 //On load
 let box = document.querySelector('section.task-list');
 
-let food = new Task("eat food");
-const toDoList = [food];
+let exercise = new Task("Exercise");
+const toDoList = [exercise];
 
 for (let i = 0; i < toDoList.length; i++) {
     populate(toDoList[i]);
