@@ -10,14 +10,21 @@
 </head>
 <body>
     <h1>To Do</h1>
-    <div class="task-list" onload="populate()">
+    <section class="task-list" onload="populate()">
 
-    </div>
+    </section>
+    
 
+
+    <span>
+        <p id="remaining"></p>
+        <button type="button" onclick="showAll()">All</button>
+        <button type="button" onclick="showActive()">Active</button>
+        <button type="button" onclick="showCompleted()">Completed</button>
+    </span>
     <input type="text" id="inputbox" name="inputbox">
     <button type="button" onclick="getTask()">+</button>
-
-    <script src="todo.js"></script>
+    <script src="js/todo.js"></script>
 
 </body>
 </html>
