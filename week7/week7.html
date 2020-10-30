@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD330 Week 7</title>
+
+</head>
+<body>
+  <h1>WDD330 Week 7 Notes</h1>
+
+
+<p>function.length returns the number of parameters the function has</p>
+<p>You an add properties to a function just like with an object. function.property = "hi"</p>    
+
+<h3>REASSIGN FUNCTION</h3>
+<p>function party(){<br>
+    console.log('Wow this is amazing!');<br>
+    party = function(){<br>
+        console.log('Been there, got the T-Shirt');<br>
+    }<br>
+}</p>
+
+<h3>RETURN AND USE FUNCTION</h3>
+<p>return function()</p>
+<p>Save the value to a variable and add parentheses to the end.</p>
+
+<h3>EVENT DRIVEN ASYNCHRONOUS PROGRAMMING</h3>
+<p>Allows you to have things happen out of order so that your program doesn't freeze while a task is running.</p> 
+
+<h3>PROMISES</h3>
+<p>const dice = {<br>
+    sides: 6,<br>
+    roll() {<br>
+        return Math.floor(this.sides * Math.random()) + 1;<br>
+    }<br>
+}<br>
+const promise = new Promise( (resolve,reject) => {<br>
+    const n = dice.roll();<br>
+    setTimeout(() => {<br>
+        (n > 1) ? resolve(n) : reject(n);<br>
+    }, n*1000);<br>
+});</p>
+
+<h4>Promise functions</h4>
+<p>promise.then() - if succeeded</p>
+<p>promise.catch() - if failed</p>
+
+<h3>ASYNC KEYWORD</h3>
+<p>async allows you to treat async code like it's synchronous.</p>
+<h2>AJAX</h2>
+<h3>Fetch API</h3>
+<p>fetch('https://example.com/data')</p>
+<p>.then( // code that handles the response )</p>
+<p>.catch( // code that runs if the server returns an error )</p>
+
+<h3>JSON Responses</h3>
+<p>response.json() - converts to json</p>
+
+<h3>QUESTIONS:</h3>
+<ul>
+    <li>What is the point of using strict?</li>
+    <li>What are generators used for?</li>
+</ul>
+
+
+
+</body>
+</html>
