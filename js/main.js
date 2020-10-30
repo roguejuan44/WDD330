@@ -4,7 +4,9 @@ const links = [
     {label: "Week 3", url: "week3/wk3.html"},
     {label: "Week 4", url: "week4/week4.html"},
     {label: "Week 5", url: "week5/week05.html"},
-    {label: "Week 6: To Do Project", url: "week5/ToDo/index.html"}
+    {label: "Week 6: To Do Project", url: "week5/ToDo/index.html"},
+    {label: "Week 7", url: "week7/week7.html"},
+
 ]
 
 
