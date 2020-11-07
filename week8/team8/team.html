@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD330 Week 7</title>
+
+</head>
+<body>
+    <h1>Find your favorite Star Wars Ship!</h1>
+    <form>
+        <input type="text" id="textInput">
+        <button type="button" name="button" onclick="search()">Lookup</button>
+    </form>
+    <div id="displayDiv"><p id="displayP"></p></div>
+
+
+<script>
+    let shipList = [];
+
+    function search() {
+        var baseURL = "https://swapi.dev/api/starships/";
+        fetch(baseURL)
+        .then((data) => data.json())
+        .then(console.log(data));
+    }
+
+    function lookup(ships, shipName) {
+        let displayList = []
+        for (let i = 0; i < ships.size; i++) {
+            if (ships[i].name.includes(shipName)) {
+                displayList.push(ships[i]);
+            };
+        }
+        document.getElementById("displayP").appendChild(shipList);
+    }
+</script>
+
+
+</body>
+</html>
