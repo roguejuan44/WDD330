@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD330 Wk9  Homepage</title>
+
+</head>
+<body>
+    <h1>Week 9</h1>
+<h2>The Browser Object Model<h2>
+
+
+<p>Try not to use window objects</p>
+<h3>Dialogs</h3>
+<ul>
+   <li>window.alert()</li>
+   <li>window.confirm()</li>
+   <li>window.prompt() - not considered user friendly as they are intrusive and stop everything else that is running</li>
+   <li>window.navigator.userAgent - returns browser/OS information</li>
+   <li>window.location.href - url string</li>
+   <li>window.history.go(x) - go back (-1), forwards (1), or reload (0). </li>
+</ul>
+
+<h3>Create a popup</h3>
+<p>const popup = window.open('https://sitepoint.com','SitePoint','width=400,height=400,resizable=yes');</p>
+<p>popup.close()</p>
+
+<h3>COOKIES</h3>
+document.cookie = 'info'
+
+
+<h2>HTML 5 API</h2>
+
+<p>Use data- attribute to create custom attributes.</p>
+<p>Local Storage: localStorage.setItem('name', 'Walter White');</p>
+<p>Retrieve stored data: localStorage.getItem('name'); </p>
+<p>Delete: delete localStorage.name; </p>
+<p>Clear: localStorage.clear();</p>
+
+<h2>Multimedia</h2>
+<ul>
+    <li>video.play()</li>
+    <li>video.pause()</li>
+    <li>video.muted</li>
+    <li>video.volume</li>
+    <li>video.currentTime</li>
+    <li>video.playbackRate</li>
+    <li>video.loop</li>
+    <li>video.duration</li>
+</ul>
+</body>
+</html>
+
+
+
