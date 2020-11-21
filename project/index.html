@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap" rel="stylesheet">
+    
+    
+		<title>Real Estate Calculator</title>
+	</head>
+	<body>
+        <header>
+            <div id="headInfo">
+            <h1>Real Estate Calculator</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Calculator</a></li>
+                    <li><a href="api.html">API</a></li>
+                </ul>
+            </nav>
+            </div>
+            <hr>
+        </header>
+        <main>
+            <div id="col1">
+
+            <p>Cap Rate = Net Operating Income / Current Market Value</p>
+            <p>NOI = Revenue - Operating Expenses (Not including taxes and insurance)</p>
+
+            <form>
+                <label>Purchase Price:</label><br>
+                <input type="text" id="price"><br>
+                <label>Down Payment:</label><br>
+                <input type="text" id="down"><br>
+                <label>Closing Costs:</label><br>
+                <input type="text" id="closing"><br>
+                <label>Annual Taxes/Insurance:</label><br>
+                <input type="text" id="tax_ins"><br>
+                <label>Renovation Costs:</label><br>
+                <input type="text" id="reno"><br>
+                <label>Gross Monthly Rental Income:</label><br>
+                <input type="text" id="rental"><br>
+                <label>Other Total Yearly Costs <br> (i.e. Management, Maintenance, HOA):</label><br>
+                <input type="text" id="other"><br>
+                <button id="submit" type="button" onclick="calc()">CALCULATE</button>
+            </form>
+            </div>
+            <div id="col2">
+                
+            </div>
+        
+        </main>
+        <footer>
+            <p>Copyright 2020 Ethan Tindall</p>
+        </footer>
+    </body>
+<script src="script.js"></script>
+</html>

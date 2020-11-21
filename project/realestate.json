@@ -1,0 +1,43 @@
+{
+"houses" : [
+    {"number" : "100",
+    "street" : "Main St",
+    "city" : "Anytown",
+    "state" : "AL",
+    "zip" : "44444",
+    "list_price" : "200000",
+    "image" : "../images/house1.jpg"},
+
+    {"number" : "723 N",
+    "street" : "2300 W",
+    "city" : "Vernal",
+    "state" : "UT",
+    "zip" : "84078",
+    "list_price" : "400000",
+    "image" : "../images/house2.jpg"},
+
+    {"number" : "4245",
+    "street" : "Main St",
+    "city" : "Provo",
+    "state" : "UT",
+    "zip" : "12345",
+    "list_price" : "120000",
+    "image" : "../images/house3.jpg"},
+
+    {"number" : "7777 N",
+    "street" : "24th Ave W",
+    "city" : "Pensacola",
+    "state" : "FL",
+    "zip" : "11154",
+    "list_price" : "1400000",
+    "image" : "../images/house4.jpg"},
+
+    {"number" : "2425 N",
+    "street" : "1600 W",
+    "city" : "Layton",
+    "state" : "UT",
+    "zip" : "84044",
+    "list_price" : "100000",
+    "image" : "../images/house5.jpg"}
+]
+}

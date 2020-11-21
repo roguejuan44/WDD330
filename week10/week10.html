@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD330 Week 10 Notes</title>
+
+</head>
+<body>
+  <h1>WDD330 Week 10 Notes</h1>
+  <h2>Validation</h2>
+<ul>
+    <li>required</li>
+    <li>minlength/maxlength: min and max string lengths</li>
+    <li>min/max: min and max numerical values</li>
+    <li>type: preset data type</li>
+    <li>pattern: regex pattern</li>
+</ul>
+<p>You can use the :valid, :invalid and :out-of-range pseudoclasses </p>
+
+<h3>Validating forms with JavaScript</h3>
+<ol>
+    <li>validationMessage</li>
+    <li>validity</li>
+    <ul>
+        <li>patternMismatch</li>
+        <li>tooLong</li>
+        <li>tooShort</li>
+        <li>rangeOverflow</li>
+        <li>rangeUnderflow</li>
+        <li>typeMismatch</li>
+        <li>valid</li>
+        <li>valueMissing</li>
+    </ul>
+    <li>willValidate</li>
+    <li>checkValidity()</li>
+    <li>setCustomValidity(message)</li>
+</ol>
+
+<h3>Using Fetch</h3>
+
+<p>fetch('http://example.com/movies.json')<br>
+  .then(response => response.json())<br>
+  .then(data => console.log(data));</p>
+
+
+</body>
+</html>
