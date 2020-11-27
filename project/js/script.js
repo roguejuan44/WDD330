@@ -1,19 +1,5 @@
 
 
-function getJSON() {
-  let url = "realestate.json";
-  
-  fetch(url)
-  .then(response => response.json())
-  .then(data => console.log(data))
-  .catch(err => {
-    // Do something for an error here
-    console.log("Error Reading data " + err);
-  });
-
-}
-
-
 function calc() {
   
     var price = parseFloat(document.getElementById("price").value);

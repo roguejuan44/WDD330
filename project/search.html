@@ -3,35 +3,40 @@
 	<head>
 		<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap" rel="stylesheet">
-    
+
     
 		<title>Real Estate API</title>
 	</head>
-	<body>
+	<body onload="getSearchResults()">
         <header>
             <div id="headInfo">
             <h1>Real Estate Calculator</h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Calculator</a></li>
-                    <li><a href="api.html">API</a></li>
+                    <li><a href="search.html">Search For Homes</a></li>
                 </ul>
             </nav>
             </div>
             <hr>
         </header>
         <main>
-            <button type="button" onclick="getJSON()">GET IT</button>
+            <div id="resultsBox">
 
 
-            <div id="display"></div>
+            </div>
+
+
+            <div id="dataDisplay"></div>
         
         </main>
         <footer>
             <p>Copyright 2020 Ethan Tindall</p>
         </footer>
+        <script src="js/apipage.js"></script>
+
     </body>
-<script src="script.js"></script>
 </html>
