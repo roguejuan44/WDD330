@@ -1,0 +1,51 @@
+input {
+    margin: 5px 0 5px 15px;
+}
+label, button {
+    font-family: 'Oswald', sans-serif;
+}
+button {
+    font-size: 1.1em;
+    margin-top: 20px;
+    background-color: #1d1f29;
+    color: #f8f8ff;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ff7f50;
+    padding: 10px 50px;
+    transition-duration: 0.2s;
+}
+button:hover {
+    background-color: #ff7f50;
+}
+
+/*--------LARGE SCREEN----------------*/
+
+@media screen and (min-width: 701px) { 
+    #headInfo {
+        display: flex;
+        flex-direction: row;
+    }
+    h1 {
+        font-size: 3em;
+    }
+    hr {
+        margin-top: -30px;
+        margin-bottom: 30px;
+    }
+    body {
+        height: 100vh;
+        overflow: hidden;
+    }
+    p {
+        padding: 0;
+        margin: 0;
+    }
+    form {
+        margin-top: 10px;
+    }
+    footer p {
+        margin-top: 10px;
+    }
+
+}

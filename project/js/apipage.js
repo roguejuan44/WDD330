@@ -67,3 +67,8 @@ function displaySpecifics(houses, i) {
 
     dataDisplay.appendChild(ul);
 }
+
+function hide() {
+    let listy = document.getElementById("resultsBox");
+    listy.classList.toggle("hide");
+}
