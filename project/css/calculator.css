@@ -22,6 +22,11 @@ button:hover {
 /*--------LARGE SCREEN----------------*/
 
 @media screen and (min-width: 701px) { 
+    main {
+        display: flex;
+        flex-direction: row;
+
+    }
     #headInfo {
         display: flex;
         flex-direction: row;
@@ -38,7 +43,7 @@ button:hover {
         overflow: hidden;
     }
     p {
-        padding: 0;
+        padding: 5px;
         margin: 0;
     }
     form {
@@ -46,6 +51,12 @@ button:hover {
     }
     footer p {
         margin-top: 10px;
+    }
+    #col2 {
+        padding-left: 70px;
+    }
+    #col2 p {
+        font-size: 1.3rem;
     }
 
 }

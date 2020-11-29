@@ -18,3 +18,9 @@ h1 {
 .hide {
     display: none;
 }
+
+@media only screen and (min-width: 701px) {
+    footer hr {
+        display: none;
+    }
+}
