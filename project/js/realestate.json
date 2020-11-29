@@ -5,7 +5,7 @@
     "address" : {"number" : "2425 N", "street" : "1600 W", "city" : "Layton", "state" : "UT", "zip" : "84044"},
     "configuration" : {"bed": 3, "bath": 3, "sqft":1200, "acreage": 0.52, "floors": "1"},
     "list_price" : 100000,
-    "image" : "/project/images/house0.jpg",
+    "image" : "/WDD330/project/images/house0.jpg",
     "description" : "Beautiful seaside home with white wood siding and red metal roof.",
     "taxes" : 1224.67
 
@@ -14,7 +14,7 @@
     "address": {"number" : "100", "street" : "Main St", "city" : "Anytown", "state" : "AL", "zip" : "44444"},
     "configuration" : {"bed": 4, "bath": 2, "sqft":1200, "acreage": 4, "floors": "2"},
     "list_price" : 200000,
-    "image" : "WDD330/project/images/house1.jpg",
+    "image" : "/WDD330/project/images/house1.jpg",
     "description" : "Sleek modern dream home. Perfect for the next big thing. That is--you!.",
     "taxes" : 1224.67
 },
@@ -22,7 +22,7 @@
     "address" : {"number" : "723 N", "street" : "2300 W", "city" : "Vernal", "state" : "UT", "zip" : "84078"},
     "configuration" : {"bed": 6, "bath": 2, "sqft":1200, "acreage": 0.7, "floors": "2"},
     "list_price" : 400000,
-    "image" : "WDD330/project/images/house2.jpg",
+    "image" : "/WDD330/project/images/house2.jpg",
     "description" : "Eh, normal everyday McMansion. If you've seen one you've seen them all.",
     "taxes" : 4000
 },
@@ -30,7 +30,7 @@
     "address" : {"number" : "4245", "street" : "Main St", "city" : "Provo", "state" : "UT", "zip" : "12345"},
     "configuration" : {"bed": 2, "bath": 1.5, "sqft":2304, "acreage": 1.2, "floors": "1"},
     "list_price" : 120000,
-    "image" : "WDD330/project/images/house3.jpg",
+    "image" : "/WDD330/project/images/house3.jpg",
     "description" : "Lovely home in a lovely neighborhood. This is the perfect neighborhood nestled in the trees.",
     "taxes" : 980.00
 },
@@ -38,7 +38,7 @@
     "address" : {"number" : "7777 N", "street" : "24th Ave W", "city" : "Pensacola", "state" : "FL", "zip" : "11154"},
     "configuration" : {"bed": 10, "bath": 3, "sqft":956, "acreage": 3, "floors": "3"},
     "list_price" : 1400000,
-    "image" : "WDD330/project/images/house4.jpg",
+    "image" : "/WDD330/project/images/house4.jpg",
     "description" : "Oh, wow... I mean, if you really want it I guess....",
     "taxes" : 2000
 }
