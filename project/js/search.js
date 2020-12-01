@@ -45,7 +45,7 @@ function displaySpecifics(houses, i) {
     let address = document.createElement("h2");
     address.innerHTML = (house.address.number + " " + house.address.street +", " + house.address.city + ", " + house.address.state + " " + house.address.zip);
     let price = document.createElement("h3"); price.innerHTML = "$" + house.list_price;
-    let img = document.createElement("img"); img.setAttribute("src", "/project/images/house"+i+".jpg");
+    let img = document.createElement("img"); img.setAttribute("src", house.image);
     img.setAttribute("alt", "Image of a house");
     dataDisplay.appendChild(address);
     dataDisplay.appendChild(img);
@@ -61,7 +61,7 @@ function displaySpecifics(houses, i) {
     let li5 = document.createElement("li"); li5.innerHTML = "Property Taxes: $" + house.taxes;
     let desc = document.createElement('p'); desc.innerHTML = house.description;
     
-    
+
 
     dataDisplay.appendChild(desc);
     ul.appendChild(li0); ul.appendChild(li1); ul.appendChild(li2); ul.appendChild(li3); ul.appendChild(li4); ul.appendChild(li5);
