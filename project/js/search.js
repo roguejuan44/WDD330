@@ -61,6 +61,7 @@ function displaySpecifics(houses, i) {
     let li5 = document.createElement("li"); li5.innerHTML = "Property Taxes: $" + house.taxes;
     let desc = document.createElement('p'); desc.innerHTML = house.description;
     
+    
 
     dataDisplay.appendChild(desc);
     ul.appendChild(li0); ul.appendChild(li1); ul.appendChild(li2); ul.appendChild(li3); ul.appendChild(li4); ul.appendChild(li5);
