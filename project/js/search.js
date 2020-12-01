@@ -45,7 +45,7 @@ function displaySpecifics(houses, i) {
     let address = document.createElement("h2");
     address.innerHTML = (house.address.number + " " + house.address.street +", " + house.address.city + ", " + house.address.state + " " + house.address.zip);
     let price = document.createElement("h3"); price.innerHTML = "$" + house.list_price;
-    let img = document.createElement("img"); img.setAttribute("src", house.image);
+    let img = document.createElement("img"); img.setAttribute("src", "https://roguejuan44.github.io/WDD330/project/images/house"+ i +".jpg");
     img.setAttribute("alt", "Image of a house");
     dataDisplay.appendChild(address);
     dataDisplay.appendChild(img);
