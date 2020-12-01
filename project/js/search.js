@@ -27,7 +27,7 @@ function displaySearchResults(houses) {
         item.setAttribute("onclick", "displaySpecifics(jsonData, " + i + ")")
         
         let address = document.createTextNode(houses[i].address.number + " " + houses[i].address.street +", " + houses[i].address.city + ", " + houses[i].address.state + " " + houses[i].address.zip);
-        let img = document.createElement("img"); img.setAttribute("src", houses.image);
+        let img = document.createElement("img"); img.setAttribute("src", houses[i].image);
         img.setAttribute("alt", "Thumbnail of a house");
         item.appendChild(address);
         item.appendChild(img);  
