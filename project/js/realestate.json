@@ -7,8 +7,8 @@
     "list_price" : 100000,
     "image" : "https://roguejuan44.github.io/WDD330/project/images/house0.jpg",
     "description" : "Beautiful seaside home with white wood siding and red metal roof.",
-    "taxes" : 1224.67
-
+    "taxes" : 1224.67,
+    "bookmarked": false
 },
     {"propertyId" : 1,
     "address": {"number" : "100", "street" : "Main St", "city" : "Anytown", "state" : "AL", "zip" : "44444"},
@@ -16,7 +16,8 @@
     "list_price" : 200000,
     "image" : "https://roguejuan44.github.io/WDD330/project/images/house1.jpg",
     "description" : "Sleek modern dream home. Perfect for the next big thing. That is--you!.",
-    "taxes" : 1224.67
+    "taxes" : 1224.67,
+    "bookmarked": false
 },
     {"propertyId" : 2,
     "address" : {"number" : "723 N", "street" : "2300 W", "city" : "Vernal", "state" : "UT", "zip" : "84078"},
@@ -24,7 +25,8 @@
     "list_price" : 400000,
     "image" : "https://roguejuan44.github.io/WDD330/project/images/house2.jpg",
     "description" : "Eh, normal everyday McMansion. If you've seen one you've seen them all.",
-    "taxes" : 4000
+    "taxes" : 4000,
+    "bookmarked": false
 },
     {"propertyId" : 3,
     "address" : {"number" : "4245", "street" : "Main St", "city" : "Provo", "state" : "UT", "zip" : "12345"},
@@ -32,7 +34,8 @@
     "list_price" : 120000,
     "image" : "https://roguejuan44.github.io/WDD330/project/images/house3.jpg",
     "description" : "Lovely home in a lovely neighborhood. This is the perfect neighborhood nestled in the trees.",
-    "taxes" : 980.00
+    "taxes" : 980.00,
+    "bookmarked": false
 },
     {"propertyId" : 4,
     "address" : {"number" : "7777 N", "street" : "24th Ave W", "city" : "Pensacola", "state" : "FL", "zip" : "11154"},
@@ -40,7 +43,8 @@
     "list_price" : 1400000,
     "image" : "https://roguejuan44.github.io/WDD330/project/images/house4.jpg",
     "description" : "Oh, wow... I mean, if you really want it I guess....",
-    "taxes" : 2000
+    "taxes" : 2000,
+    "bookmarked": false
 }
 
 ]}

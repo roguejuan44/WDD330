@@ -44,12 +44,27 @@ function displaySpecifics(houses, i) {
     //display house address and image
     let address = document.createElement("h2");
     address.innerHTML = (house.address.number + " " + house.address.street +", " + house.address.city + ", " + house.address.state + " " + house.address.zip);
+    
+    let bookmark = document.createElement("button");
+    bookmark.setAttribute("onclick", "bookmarkClass(" + i + ")");
+
+    if (localStorage.getItem("bookmark"+i)) {
+        bookmark.innerHTML = "Unbookmark";
+        bookmark.setAttribute("class", "marked bookmark" + i);
+    }
+    else {
+        bookmark.innerHTML = "Bookmark";
+        bookmark.setAttribute("class", "bookmark" + i);
+    }
+
+
     let price = document.createElement("h3"); price.innerHTML = "$" + house.list_price;
     let img = document.createElement("img"); img.setAttribute("src", "https://roguejuan44.github.io/WDD330/project/images/house"+ i +".jpg");
     img.setAttribute("alt", "Image of a house");
     dataDisplay.appendChild(address);
     dataDisplay.appendChild(img);
     dataDisplay.appendChild(price);
+    dataDisplay.appendChild(bookmark);
 
     //display house configuration
     let ul = document.createElement("ul");
@@ -72,4 +87,17 @@ function displaySpecifics(houses, i) {
 function hide() {
     let listy = document.getElementById("resultsBox");
     listy.classList.toggle("hide");
+}
+
+function bookmarkClass(x) {
+    let bookmark = document.getElementsByClassName("bookmark"+ x);
+    bookmark = bookmark[0];
+    if (bookmark.classList.contains("marked")) {
+        bookmark.innerHTML = "Bookmark";
+        localStorage.removeItem(`bookmark${x}`); 
+    } else {
+        bookmark.innerHTML = "Unbookmark";        
+        localStorage.setItem(`bookmark${x}`, true);
+    }
+    bookmark.classList.toggle("marked");
 }
