@@ -43,7 +43,7 @@
         background-color: #ff7f50;
     }
     .unmarked {
-        background-color: none;
+        background-color: transparent;
     }
     
 }
@@ -139,7 +139,7 @@
         background-color: #ff7f50;
     }
     .unmarked {
-        background-color: none;
+        background-color: transparent;
     }
     #placeholder {
         display: block;

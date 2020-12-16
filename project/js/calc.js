@@ -1,3 +1,4 @@
+jsonData = []
 
 
 function calc() {
@@ -28,3 +29,51 @@ function calc() {
   }
   
 
+//Retrieve the data
+function getSearchResults() {
+    var xhttp = new XMLHttpRequest();
+    let url = "js/realestate.json";
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            let obj = this.responseText;
+            obj = JSON.parse(obj);
+            let houses = obj["houses"];
+            displayBookmarks(houses);
+        }
+    };
+    xhttp.open("GET", url, true);
+    xhttp.send();
+}
+
+//generate a div for each property
+function displayBookmarks(houses) {
+  console.log(houses);
+  let resultsBox = document.getElementById("bookmark-row");
+  for (let i = 0; i < houses.length; i ++) {
+      jsonData.push(houses[i]);
+      if (localStorage.getItem("bookmark"+i)) {
+        document.getElementById("ph2").innerHTML = "";
+        let item = document.createElement("div");
+        item.setAttribute("class", "result item" + i);
+        item.setAttribute("onclick", "populateData(jsonData, " + i + ")")
+        
+        let address = document.createTextNode(houses[i].address.number + " " + houses[i].address.street +", " + houses[i].address.city + ", " + houses[i].address.state + " " + houses[i].address.zip);
+        let img = document.createElement("img"); img.setAttribute("src", houses[i].image);
+        img.setAttribute("alt", "Thumbnail of a house");
+        item.appendChild(address);
+        item.appendChild(img);  
+        resultsBox.appendChild(item);
+      }
+  }
+}
+
+function populateData(array, i) {
+    let house = array[i];
+    document.getElementById("price").value = house.list_price;
+    document.getElementById("closing").value = house.list_price/50;
+    document.getElementById("tax_ins").value = house.taxes;
+
+
+}
+
+getSearchResults();

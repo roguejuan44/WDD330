@@ -20,12 +20,23 @@ button:hover {
 }
 #placeholder {
     display: none;
-
 }
-
+#bookmark-row img {
+    width: 50%;
+}
+#bookmark-row div {
+    display: flex;
+    flex-direction: column;
+}
+#bookmark-row {
+    height: auto;
+}
+#col2 {
+    padding-bottom: 10px;
+}
 /*--------LARGE SCREEN----------------*/
 
-@media screen and (min-width: 701px) { 
+@media screen and (min-width: 900px) { 
 
     @keyframes slide {
         0% {margin-left:-300px;}
@@ -70,7 +81,7 @@ button:hover {
     }
     #col2 {
         border: 1px solid #ff7f50;
-        width: 50%;
+        width: 30%;
         animation-name: slideR;
         animation-duration: 1s;
         padding: 15px;
@@ -82,14 +93,20 @@ button:hover {
         animation-duration: 1s;
 
     }
-    #col2 p {
-        font-size: 1.3rem;
-        
-    }
     #placeholder {
         display: block;
-        padding: 25%;
-        margin-left: 100px;
-        margin-top: 50px;
+    }
+    #bookmark-row {
+        border: 1px solid #ff7f50;
+        padding: 15px;
+        width: 20%;
+        animation-name: slideR;
+        animation-duration: 1s;
+        overflow-y: scroll;
+        height: 80vh;
+
+    }
+    #bookmark-row img {
+        width: 100%;
     }
 }
